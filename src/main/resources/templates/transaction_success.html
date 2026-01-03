@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        /* Same styles as above for consistency */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .header { background: #28a745; color: white; padding: 10px; text-align: center; border-radius: 8px 8px 0 0; }
+        .content { padding: 20px; }
+        .button { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Transaction Successful!</h1>
+    </div>
+    <div class="content">
+        <p>Hi <span th:text="${userName}">User</span>,</p>
+        <p>Your transaction of <span th:text="${amount}">0.00</span> has been completed successfully.</p>
+        <a href="https://yourapp.com/dashboard" class="button">View Details</a>
+    </div>
+</div>
+</body>
+</html>
